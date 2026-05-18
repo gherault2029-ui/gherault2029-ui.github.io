@@ -1,0 +1,91 @@
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 7%;
+  height: 250px; /* only for demonstration, should be removed */
+  background: #cccccc;
+  padding: 20px;
+}
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+article {
+  float: left;
+  padding: 20px;
+  width: 93%;
+  background-color: #ffffff;
+  height: 250px; /* only for demonstration, should be removed */
+}
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+header.p1 {
+    background-color: rgb(127, 255, 240);
+}
+header.p2 {
+    background-color: rgb(255, 229, 127);
+}
+header.p3 {
+    background-color: rgb(127, 150, 255);
+}
+a:hover, a:active{
+  background-color: red;
+}
+.button {
+  background-color: #940505;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button1 {border-radius: 10px;}
+.button2 {border-radius: 10px;}
+.button3 {border-radius: 10px;}
+.x2{
+  float:right;
+}
+.x3{
+  float: right;
+}
+.x4{
+  float: right;
+}
